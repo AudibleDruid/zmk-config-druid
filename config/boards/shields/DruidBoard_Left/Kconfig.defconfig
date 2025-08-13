@@ -1,0 +1,6 @@
+if SHIELD_DRUIDBOARD_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "DruidBoard"
+
+endif
