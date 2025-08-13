@@ -14,7 +14,6 @@
                 &kp LSHIFT  &kp Z       &kp X       &kp C  &kp V    &kp B       &kp N       &kp M       &kp COMMA   &kp PERIOD  &kp FSLH    &kp PG_UP
                 &kp LCTRL   &kp LGUI    &kp LALT    &mo 1  &kp RET  &kp SPACE   &kp RET     &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT   &kp PG_DN
             >;
-            >;
         };
 
         bt_layer {
