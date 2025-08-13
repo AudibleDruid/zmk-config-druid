@@ -1,2 +1,5 @@
 config SHIELD_DRUIDBOARD_LEFT
     def_bool $(shields_list_contains,DruidBoard_Left)
+
+config SHIELD_DRUIDBOARD_RIGHT
+    def_bool $(shields_list_contains,DruidBoard_Right)
