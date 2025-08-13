@@ -2,13 +2,13 @@
 
 / {
     chosen {
-        zmk,kscan = &default_kscan;
+        zmk,kscan = &default_kscan_right;
         zmk,matrix_transform = &default_transform;
     };
 
-    default_kscan: kscan {
+    default_kscan_right: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "default_kscan";
+        label = "default_kscan_right";
         diode-direction = "col2row";
 
         row-gpios = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -29,6 +29,7 @@
         compatible = "zmk,matrix-transform";
         rows = <5>;
         columns = <6>;
+        
         col-offset = <6>;
 
         map = <
