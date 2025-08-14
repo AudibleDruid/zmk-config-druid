@@ -1,4 +1,4 @@
-#include DruidBoard.dtsi
+#include "DruidBoard.dtsi"
 
 / {
     default_kscan: kscan {
