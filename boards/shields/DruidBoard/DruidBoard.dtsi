@@ -26,22 +26,6 @@
         diode-direction = "col2row";
     };
 
-    DruidEncoder_Left: encoder_left {
-        compatible = "alps,ec11";
-        a-gpios = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <24>;
-        status = "okay";
-    };
-
-    DruidEncoder_Right: encoder_right {
-        compatible = "alps,ec11";
-        a-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <24>;
-        status = "okay";
-    };
-
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&DruidEncoder_Left &DruidEncoder_Right>;
