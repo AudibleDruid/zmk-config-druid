@@ -36,19 +36,19 @@
 
     DruidEncoder_Right: encoder_right {
         compatible = "alps,ec11";
-        a-gpios = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
         status = "disabled";
     };
 
-    Left_Sensors: left-sensors {
+    Left_Sensors: left_sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&DruidEncoder_Left>;
         triggers-per-rotation = <24>;
     };
 
-    Right_Sensors: right-sensors {
+    Right_Sensors: right_sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&DruidEncoder_Right>;
         triggers-per-rotation = <24>;
