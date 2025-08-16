@@ -26,7 +26,7 @@
         diode-direction = "col2row";
     };
 
-    DruidEncoder_Left: encoder_left {
+    left_encoder: encoder_left {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -34,7 +34,7 @@
         status = "disabled";
     };
 
-    DruidEncoder_Right: encoder_right {
+    right_encoder: encoder_right {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -44,7 +44,7 @@
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&DruidEncoder_Left &DruidEncoder_Right>;
+        sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <24>;
     };
 };
