@@ -16,8 +16,10 @@
                 &kp LCTRL   &kp LGUI    &kp LALT    &mo 1  &kp RET  &kp SPACE   &kp SPACE   &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT   &kp PG_DN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <
+                &inc_dec_kp C_VOL_UP C_VOL_DN
+                &inc_dec_kp PG_UP PG_DN
+            >;
         };
 
         bt_layer {
