@@ -21,4 +21,4 @@
 
 &DruidEncoder_Right {
     status = "okay";
-}
+};

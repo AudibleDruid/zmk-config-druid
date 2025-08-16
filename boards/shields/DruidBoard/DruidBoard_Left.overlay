@@ -17,4 +17,4 @@
 
 &DruidEncoder_Left {
     status = "okay";
-}
+};
