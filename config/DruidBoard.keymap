@@ -20,7 +20,7 @@
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
 
-            sensor-bindings@sensors_right = <
+            sensor-bindings-sensors_right = <
                 &inc_dec_kp PG_UP PG_DN
             >;
         };
