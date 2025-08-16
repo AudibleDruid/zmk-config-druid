@@ -22,3 +22,7 @@
 &DruidEncoder_Right {
     status = "okay";
 };
+
+&DruidEncoder_Left {
+    status = "disabled";
+};
