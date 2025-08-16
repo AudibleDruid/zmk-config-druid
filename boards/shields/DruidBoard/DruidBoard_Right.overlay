@@ -22,3 +22,7 @@
 &right_encoder {
     status = "okay";
 };
+
+&sensors {
+    triggers-per-rotation = <1>;
+};
