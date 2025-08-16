@@ -32,7 +32,7 @@
         b-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
         status = "disabled";
-    }
+    };
 
     DruidEncoder_Right: encoder_right {
         compatible = "alps,ec11";
@@ -40,7 +40,7 @@
         b-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
         status = "disabled";
-    }
+    };
 
     Left_Sensors: left-sensors {
         compatible = "zmk,keymap-sensors";
