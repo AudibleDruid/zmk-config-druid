@@ -31,7 +31,7 @@
         a-gpios = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
-        status = "disabled";
+        status = "okay";
     };
 
     DruidEncoder_Right: encoder_right {
@@ -39,7 +39,7 @@
         a-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
-        status = "disabled";
+        status = "okay";
     };
 
     Left_Sensors: left_sensors {
