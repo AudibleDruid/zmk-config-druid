@@ -12,7 +12,13 @@
     };
 
     keymap {
+        compatible = "zmk,keymap";   /* ← mandatory for ZMK */
+
         default_layer {
+            #display_name = "default"; /* optional but recommended */
+            
+            bindings = < &kp ESC >;   /* ← at least one key, even a dummy key */
+            
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN
                 &mouse_scroll &msc SCRL_UP &msc SCRL_DOWN
