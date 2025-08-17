@@ -5,7 +5,7 @@
 
 / {
     behaviors {
-        scroll {
+        scroll:scroll {
             compatible = "zmk,behavior-input-two-axis";
             #binding-cells = <2>;
             bindings = <&msc SCRL_UP &msc SCRL_DOWN>;
