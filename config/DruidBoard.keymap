@@ -4,14 +4,20 @@
 
 / {
     behaviors {
-        mouse_scroll {
+        scroll_up {
             compatible = "zmk,behavior_inc_dec;
-            label = "mouse_scroll";
-            #binding-cells = <2>;
-            bindings = < #binding-cells = <2>;
-            bindings = <&msc SCRL_DOWN &msc SCRL_UP>;
+            label = "mouse_scroll_up";
+            #binding-cells = <1>;
+            bindings = <&msc SCRL_UP>;
         }
-    }
+
+        scroll_down {
+            compatible = "zmk,behavior_inc_dec;
+            label = "mouse_scroll_down";
+            #binding-cells = <1>;
+            bindings = <&msc SCRL_DOWN >;
+        }
+}
 
     keymap {
         compatible = "zmk,keymap";
@@ -28,7 +34,7 @@
 
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN
-                &mouse_scroll
+                BINDING scroll_up scroll_down
             >;
         };
 
