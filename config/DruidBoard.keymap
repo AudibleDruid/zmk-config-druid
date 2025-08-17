@@ -8,6 +8,7 @@
         scroll:scroll {
             compatible = "zmk,behavior-input-two-axis";
             #binding-cells = <2>;
+            x-input-code = <0>; 
             bindings = <&msc SCRL_UP &msc SCRL_DOWN>;
         };
     };
