@@ -7,9 +7,7 @@
     behaviors {
         scroll {
             compatible = "zmk,behavior-input-two-axis";
-            label = "scroll";
             #binding-cells = <2>;
-            bindings = <&msc SCRL_UP &msc SCRL_DOWN>;
         };
     };
 
@@ -28,7 +26,7 @@
 
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN
-                &scroll
+                &scroll <&msc SCRL_UP &msc SCRL_DOWN>
             >;
         };
 
