@@ -22,7 +22,7 @@
             >;
 
             sensor-bindings = <
-                &rotary1 &mouse_scroll &msc SCRL_UP &msc SCRL_DOWN
+                &mouse_scroll &msc SCRL_UP &msc SCRL_DOWN
             >;
         };
     };
