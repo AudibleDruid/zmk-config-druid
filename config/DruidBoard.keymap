@@ -9,15 +9,15 @@
             label = "mouse_scroll_up";
             #binding-cells = <1>;
             bindings = <&msc SCRL_UP>;
-        }
+        };
 
         scroll_down {
             compatible = "zmk,behavior_inc_dec;
             label = "mouse_scroll_down";
             #binding-cells = <1>;
             bindings = <&msc SCRL_DOWN >;
-        }
-}
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
