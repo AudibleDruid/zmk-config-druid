@@ -5,18 +5,11 @@
 
 / {
     behaviors {
-        scroll_up {
+        scroll {
             compatible = "zmk,behavior-input-two-axis";
-            label = "mouse_scroll_up";
-            #binding-cells = <1>;
-            bindings = <&msc SCRL_UP>;
-        };
-
-        scroll_down {
-            compatible = "zmk,behavior-input-two-axis";
-            label = "mouse_scroll_down";
-            #binding-cells = <1>;
-            bindings = <&msc SCRL_DOWN >;
+            label = "mouse_scroll";
+            #binding-cells = <2>;
+            bindings = <&msc SCRL_UP &msc SCRL_DOWN>;
         };
     };
 
@@ -35,7 +28,7 @@
 
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN
-                BINDING &scroll_up &scroll_down
+                BINDING &scroll
             >;
         };
 
