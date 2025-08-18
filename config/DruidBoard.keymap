@@ -17,12 +17,12 @@
 
         default_layer {
             bindings = <
-                &kp A   &kp B   &kp C
+                &kp A &kp B &kp C
                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
             >;
 
             sensor-bindings = <
-                &left_encoder &mouse_scroll 0 1
+                &left_encoder &mouse_scroll, 0, 1
             >;
         };
     };
