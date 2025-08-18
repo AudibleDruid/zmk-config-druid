@@ -66,5 +66,5 @@
             x-input-code = <0>;                 // horizontal scroll disabled
             y-input-code = <0x08>;              // vertical scroll
         };
-    }
+    };
 };
