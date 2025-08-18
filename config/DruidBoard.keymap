@@ -2,7 +2,16 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/bt.h>
 
- / {
+/ {
+    behaviors {
+        mouse_scroll: mouse_scroll {
+            compatible = "zmk,behavior-input-two-axis";
+            #sensor-binding-cells = <2>;
+            x-input-code = <0>;               // horizontal scroll disabled
+            y-input-code = <INPUT_REL_WHEEL>; // vertical scroll
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -13,7 +22,7 @@
             >;
 
             sensor-bindings = <
-                &left_encoder &msc 1 -1
+                &left_encoder &mouse_scroll
             >;
         };
     };
