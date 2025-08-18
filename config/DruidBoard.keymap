@@ -22,7 +22,7 @@
             >;
 
             sensor-bindings = <
-                &left_encoder &mouse_scroll
+                &left_encoder &mouse_scroll 0 1
             >;
         };
     };
