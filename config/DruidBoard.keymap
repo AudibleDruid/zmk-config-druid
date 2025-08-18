@@ -13,7 +13,7 @@
             >;
 
             sensor-bindings = <
-                &left_encoder 1, -1
+                &left_encoder &msc 1 -1
             >;
         };
     };
