@@ -55,13 +55,4 @@
             triggers-per-rotation = <4>;    // right encoder slower
         };
     };
-
-    behaviors {
-        mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-input-two-axis";
-            #sensor-binding-cells = <2>;
-            x-input-code = <0>;                 // horizontal scroll disabled
-            y-input-code = <8>;                 // vertical scroll
-        };
-    };
 };
