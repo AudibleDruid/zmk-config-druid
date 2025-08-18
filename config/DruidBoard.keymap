@@ -19,7 +19,7 @@
 
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN
-                &right_encoder &mouse_scroll 0 1
+                &sensors.right_config &mouse_scroll 0 1
             >;
         };
 
